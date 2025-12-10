@@ -1,0 +1,6 @@
+#installtion of docker if different in differnt os working will be same
+  sudo -i
+  ##3become a root user
+  https://docs.docker.com/engine/install/ubuntu/
+  ##once installation complete
+  docker version
