@@ -1,0 +1,18 @@
+###lets lern about docker command
+  #the below command will show all the docker commands
+  docker
+  docker info
+  #this is going to create your first container and downalod the images
+   98  docker container run --detach --publish=80:80 nginx
+     #docker ps is used to check your running container
+   99  docker ps
+  100  curl localhost
+     #if i create a new contianer with the same image name you will find that it will not download the image again
+  101  docker container run --detach --publish=81:80 nginx
+     #docker images will show that you have an nginx image
+  102  docker images
+     ##lets create another contianer with new image
+      105  docker container run --detach --publish=82:80 httpd
+  106  docker images
+#########how it is geeting those images
+ 
