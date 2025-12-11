@@ -1,0 +1,15 @@
+####lets check the cluster state 
+  sudo -i
+  kubectl get nodes
+  #as i told you all the component in your k8s cluster are running as container lets verof the same
+  #this will not work as docker support is obsolote
+   37  docker ps
+  #to check the container engine running 
+   38  systemctl status containerd
+  #to see all the master component running as containers
+   39  crictl ps
+  #image check
+   40  crictl images
+#ctr a new utility is geeting developer by k8s
+  42  ctr
+   43  ctr images
