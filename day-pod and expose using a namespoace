@@ -1,0 +1,10 @@
+##lets create our first namespace change the name to your name
+   51  kubectl create namespace gopal
+   52  kubectl get ns
+   53  kubectl -n gopal run my-first-pod --image=nginx
+   54  kubectl -n gopal get pod
+   55  kubectl -n gopal describe pod
+  #lets expose the pod and access it outside k8s cluster
+   58  kubectl -n gopal expose pod my-first-pod --type=NodePort --port=80
+   59  kubectl -n get svc
+   60  kubectl -n gopal get svc
